@@ -1,0 +1,30 @@
+Variável normal		=>	a
+Variável ponteiro	=>	*ptr
+
+a    = <valor>
+&a   = <endereço>	<= para var normal o símbolo na frente é endereço
+
+ptr   = <endereço>
+*ptr  = <valor>		<= para ponteiros o símbolo na frente é valor
+
+#O comportamento delas em relação aos símbolos é invertido.
+==============================================
+#Ao declarar uma função o comportamento se "inverte novamente"
+#Isso pq char *ptr é uma declaração, então o que ele espera é uma atribuição
+#Logo ele espera ptr ou &a, pq ponteiros devem ser atribuídos a endereços.
+
+int nome_da_função(char *ptr) <= ele espera um endereço
+
+==============================================
+#Uso da função write
+
+write(n, <endereço>, y);  <= dá pra passar uma string no lugar do endereço
+
+==============================================
+#Uso do ponteiro com arrays
+#O ponteiro com array (ptr[n]) volta a se comportar como variável normal
+
+int nome_da_função(char *str)
+
+str[i] 	= <valor>
+&str[i]	= <endereço>
